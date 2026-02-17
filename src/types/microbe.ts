@@ -5,7 +5,7 @@ export interface Microbe {
   id: string;
   name: string;
   type: MicrobeType;
-  abundance: number; // relative abundance in %
+  abundance: number; 
   role: MicrobeRole;
   description: string;
 }

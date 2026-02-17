@@ -1,4 +1,3 @@
-import React from 'react';
 import { FlaskConical, Bug, Sprout } from 'lucide-react';
 
 interface StatsBarProps {

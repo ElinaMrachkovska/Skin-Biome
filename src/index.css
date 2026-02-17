@@ -1,7 +1,5 @@
-/* URL IMPORTS (SUCH AS FONT IMPORTS) SHOULD BE KEPT ABOVE TAILWIND IMPORTS - DO NOT DELETE THIS COMMENT */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
-/* PLEASE NOTE: THESE TAILWIND IMPORTS SHOULD NEVER BE DELETED - DO NOT DELETE THIS COMMENT */
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
@@ -15,12 +13,28 @@
   --accent-bacteria: #0d9488;
   --accent-fungi: #d97706;
 }
+
+.dark {
+  --bg-primary: #0f172a;
+  --bg-card: #1e293b;
+  --text-primary: #f1f5f9;
+  --text-secondary: #94a3b8;
+  --text-title: #818cf8;
+  --accent-bacteria: #2dd4bf;
+  --accent-fungi: #fbbf24;
+}
+
 body {
   font-family: 'Inter', sans-serif;
-  background-color: var(--bg-primary);
-  color: var(--text-primary);
-   font-size: 18px;
+  font-size: 18px;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  background: linear-gradient(to bottom right, #f0fdf4, #eff6ff);
+}
+
+.dark body {
+  background: linear-gradient(to bottom right, #162446, #416aac);
 }

@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from 'react';
+import { useMemo, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Microbe, MicrobeType } from '../../types/microbe';
 import { MicrobeCard } from './MicrobeCard';
@@ -40,7 +40,7 @@ export function MicrobeList({ data }: MicrobeListProps) {
     setSortDirection((prev) => prev === 'desc' ? 'asc' : 'desc');
   };
   return (
-<div className="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 bg-gradient-to-br from-green-50 to-blue-50">
+<div className="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
       <StatsBar
         total={stats.total}
         bacteriaCount={stats.bacteria}
